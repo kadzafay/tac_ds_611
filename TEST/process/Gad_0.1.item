@@ -107,7 +107,7 @@
     <routinesParameter id="_7GP9IDxoEeaXGvbsA3PYSw" name="TalendDate"/>
     <routinesParameter id="_7GTngDxoEeaXGvbsA3PYSw" name="TalendString"/>
   </parameters>
-  <node componentName="tSleep" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="64">
+  <node componentName="tSleep" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSleep_1" show="false"/>
     <elementParameter field="TEXT" name="PAUSE" value="240"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
