@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="waiting" prompt="waiting?" promptNeeded="false" type="id_Integer" value="20"/>
+    <contextParameter comment="" name="dirPath" prompt="dirPath?" promptNeeded="false" type="id_String" value="C:/Users/jdufay/Desktop/Instructor/ctx/dev/"/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="waiting" prompt="waiting?" promptNeeded="false" type="id_Integer" value="50"/>
+    <contextParameter comment="" name="dirPath" prompt="dirPath?" promptNeeded="false" type="id_String" value="C:/Users/jdufay/Desktop/Instructor/ctx/prod/"/>
+  </context>
   <parameters>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -109,13 +116,13 @@
   </parameters>
   <node componentName="tSleep" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSleep_1" show="false"/>
-    <elementParameter field="TEXT" name="PAUSE" value="240"/>
+    <elementParameter field="TEXT" name="PAUSE" value="waitin"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSleep_1"/>
   </node>
   <node componentName="tFileTouch" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileTouch_1" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/jdufay/Desktop/Instructor/Degroof.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.dirPath + &quot;Degroof.csv&quot;"/>
     <elementParameter field="CHECK" name="CREATEDIR" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileTouch_1"/>
