@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="waiting" prompt="waiting?" promptNeeded="false" type="id_Integer" value="20"/>
+    <contextParameter comment="" name="waiting" prompt="waiting?" promptNeeded="false" type="id_Integer" value="10"/>
     <contextParameter comment="" name="dirPath" prompt="dirPath?" promptNeeded="false" type="id_String" value="C:/Users/jdufay/Desktop/Instructor/ctx/dev/"/>
   </context>
   <context confirmationNeeded="false" name="Prod">
-    <contextParameter comment="" name="waiting" prompt="waiting?" promptNeeded="false" type="id_Integer" value="50"/>
+    <contextParameter comment="" name="waiting" prompt="waiting?" promptNeeded="false" type="id_Integer" value="20"/>
     <contextParameter comment="" name="dirPath" prompt="dirPath?" promptNeeded="false" type="id_String" value="C:/Users/jdufay/Desktop/Instructor/ctx/prod/"/>
   </context>
   <parameters>
